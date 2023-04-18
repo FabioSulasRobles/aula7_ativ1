@@ -42,6 +42,9 @@ img{
   transform: rotateY(180deg);
   border-radius: 6px;
 }
+
+
+
 @keyframes sombra{
     0%{
         box-shadow: 0 0 0 black;
@@ -50,6 +53,21 @@ img{
         box-shadow: 0px 0px 15px black;
     }
 }
+
+
+
+@keyframes flip {
+    0%{
+        transform: rotatey(0deg)
+    }
+    100%{
+        transform: rotatey(180deg)
+    }
+}
+
+
+
+
 .card:hover{
     animation-name: sombra;
     animation-duration: 1s;
