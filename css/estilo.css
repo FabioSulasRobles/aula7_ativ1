@@ -65,9 +65,6 @@ img{
     }
 }
 
-
-
-
 .card:hover{
     animation-name: sombra;
     animation-duration: 1s;
@@ -75,3 +72,9 @@ img{
     animation-direction: alternate;
     animation-fill-mode: forwards;
 }
+
+.card:active{
+    animation: flip 1s ease-out;
+    animation-fill-mode: forwards;
+}
+
