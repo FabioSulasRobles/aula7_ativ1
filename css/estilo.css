@@ -1,0 +1,59 @@
+.container{
+    width: 660px;
+    margin: auto;
+}
+.card-container{
+    width: 150px;
+    position: relative;
+    height: 150px;
+    cursor: pointer;
+    display: inline-block;
+    margin-right: 10px;
+    margin-bottom: 5px;
+    margin-top: 10px;
+    border-radius: 6px;
+}
+.card{
+    height: 100%;
+  position: absolute;
+  transform-style: preserve-3d;
+  transition: all 1s ease-in-out;
+  width: 100%;
+  border-radius: 6px;
+}
+img{
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 6px;
+}
+.card .side{
+    height: 100%;
+    width: 100%;
+    backface-visibility: hidden;
+    position: absolute;
+    border-radius: 6px;
+}
+.card .back{
+    background: #eaeaed;
+  color: #0087cc;
+  line-height: 150px;
+  text-align: center;
+  transform: rotateY(180deg);
+  border-radius: 6px;
+}
+@keyframes sombra{
+    0%{
+        box-shadow: 0 0 0 black;
+    }
+    100%{
+        box-shadow: 0px 0px 15px black;
+    }
+}
+.card:hover{
+    animation-name: sombra;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+    animation-direction: alternate;
+    animation-fill-mode: forwards;
+}
