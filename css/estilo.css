@@ -45,17 +45,6 @@ img{
 
 
 
-@keyframes sombra{
-    0%{
-        box-shadow: 0 0 0 black;
-    }
-    100%{
-        box-shadow: 0px 0px 15px black;
-    }
-}
-
-
-
 @keyframes flip {
     0%{
         transform: rotatey(0deg)
@@ -65,16 +54,15 @@ img{
     }
 }
 
-.card:hover{
-    animation-name: sombra;
-    animation-duration: 1s;
-    animation-timing-function: ease-out;
-    animation-direction: alternate;
-    animation-fill-mode: forwards;
-}
 
-.card:active{
+
+#flip1:target, #flip2:target, #flip3:target, #flip4:target, #flip5:target, #flip6:target, #flip7:target, #flip8:target, #flip9:target, #flip10:target, #flip11:target,  #flip12:target {
     animation: flip 1s ease-out;
     animation-fill-mode: forwards;
 }
-
+#flip1:hover, #flip2:hover, #flip3:hover, #flip4:hover, #flip5:hover, #flip6:hover, #flip7:hover, #flip8:hover, #flip9:hover, #flip10:hover, #flip11:hover,  #flip12:hover {
+    box-shadow: 0 0 15px black;
+}
+.card:hover{
+    box-shadow: 0px 0px 15px black;
+}
